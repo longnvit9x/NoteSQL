@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/edTitle_Detail"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:paddingLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDelete_Detail"
+            android:background="@drawable/shp_button"
+            android:text="Xóa"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btnDelete_Detail"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:id="@+id/btnUpdate_Detail"
+            android:layout_marginRight="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shp_button"
+            android:layout_toLeftOf="@id/btnDelete_Detail"
+            />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edContent_Detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <EditText
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="false"
+        android:id="@+id/edDateTime_Detail"
+        android:gravity="center"/>
+
+
+</LinearLayout>
